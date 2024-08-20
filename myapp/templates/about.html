@@ -1,0 +1,184 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}Zero Hunger{% endblock %}</title>
+    <link rel="stylesheet" type="text/css" href="{% static 'css/style.css' %}">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+    <link rel="icon" href="{% static 'img/favicon.ico' %}">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400|Nunito:600,700" rel="stylesheet">
+    <!-- Owl Carousel CSS -->
+    <link rel="stylesheet" href="{% static 'lib/owlcarousel/assets/owl.carousel.css' %}">
+    <link rel="stylesheet" href="{% static 'lib/owlcarousel/assets/owl.theme.default.css' %}">
+    <link href="{% static 'animate/animate.min.css' %}" rel="stylesheet">
+    <link href="{% static 'owlcarousel/assets/owl.carousel.min.css' %}" rel="stylesheet">
+    <link href="{% static 'flaticon/font/flaticon.css' %}" rel="stylesheet">
+    <link href="{% static 'tempusdominus/css/tempusdominus-bootstrap-4.min.css' %}" rel="stylesheet">
+    
+    
+
+</head>
+<body>
+
+
+<!-- Navbar -->
+<div class="navbar navbar-expand-lg bg-light navbar-light">
+    <div class="container-fluid">
+        <a href="{% url 'index' %}" class="navbar-brand">Zero <span>Hunger</span></a>
+        <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">
+            <div class="navbar-nav ml-auto">
+                <a href="{% url 'index' %}" class="nav-item nav-link ">Home</a>
+                <a href="{% url 'about' %}" class="nav-item nav-link active">About</a>
+                <a href="https://get.mobitrash.in/" class="nav-item nav-link">Mobitrash</a>
+                <a href="{% url 'signup' %}" class="nav-item nav-link">Signup</a>
+                <a href="{% url 'login' %}" class="nav-item nav-link" >Login</a>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- End Navbar -->
+
+ <!-- Page Header Start -->
+ <div class="page-header mb-0">
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <h2>About Us</h2>
+            </div>
+            <div class="col-12">
+                <a href="{% url 'index' %}">Home</a>
+                <a href="{% url 'about' %}">About Us</a>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Page Header End -->
+
+
+
+        <!-- Start -->
+        <div class="food mt-0">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-md-4">
+                        <div class="food-item">
+                            
+                            <h2>Care</h2>
+                            <p>
+                                Help minimize food wastage across the supply chain by means of redistribution to poor and needy.
+                            </p>
+                           
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="food-item">
+                           
+                            <h2>Aware</h2>
+                            <p>
+                                Mobilize people to minimize their food wastage through widespread awareness program across the country by Food Recovery Agencies.
+                            </p>
+                            
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="food-item">
+                            
+                            <h2>Share</h2>
+                            <p>
+                                Facilitate safe distribution of surplus food by connecting trained food recovery agencies with food chains.
+                            </p>
+                           
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--  End -->
+
+        
+        <!-- About Start -->
+        <div class="about">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-lg-6">
+                        <div class="about-img">
+                            <img src="{% static 'img/carousel-3.jpg' %}" alt="Image">
+                            <button type="button" class="btn-play" data-toggle="modal" data-src="https://www.youtube.com/embed/MMW6zLbBmQg?si=L-Q4zZhlQ5UUU5T8" data-target="#videoModal">
+                                <span></span>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="about-content">
+                            <div class="section-header">
+                                <p>About</p>
+                                <h4>SAVE FOOD AND SHARE FOOD</h4>
+                            </div>
+                            <div class="about-text">
+                                <p>
+                                    About 15 percent of India is undernourished. This statistic may not initially seem significant, but 15% of 1.34 billion people is roughly 199 million people. To put this in perspective, 199 million people is more than half of the United States. Currently, organizations such as the Fight Hunger Foundation have begun to battle the issue, but it remains prevalent.
+One-third of food gets lost or wasted. According to the Indian Food Bank, 40 percent of vegetables and 30 percent of cereals produced are lost due to inefficiencies in the supply chain. New agricultural methods and the overall industrialization of India have sought to increase efficiency.
+Women account for 60 percent of India’s hungry population. For the last 65 years, CARE India has emerged as a leader in addressing the issue of hunger in developing areas by focusing on women’s health, education, and access to necessities. The NGO has impacted 24.1 million people directly and 85.8 million indirectly.
+3,000 children die every day from hunger. Those that survive have a high chance of living with hardships in the future. Organizations like Save the Children have turned to India to help decrease this number through aid in the form of food, hygiene, and education.
+                                </p>
+<!--                                
+                                <a class="btn custom-btn" href="about.html">More</a> -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- About End -->
+        
+        
+        <!-- Video Modal Start-->
+        <div class="modal fade" id="videoModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-body">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>        
+                        <!-- 16:9 aspect ratio -->
+                        <div class="embed-responsive embed-responsive-16by9">
+                            <iframe class="embed-responsive-item" src="" id="video"  allowscriptaccess="always" allow="autoplay"></iframe>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div> 
+        <!-- Video Modal End -->
+
+
+      
+
+
+<div class="container">
+    {% block content %}
+    {% endblock %}
+</div>
+
+<!-- jQuery and Bootstrap JS -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+<!-- Owl Carousel JS -->
+<script src="{% static 'lib/owlcarousel/owl.carousel.min.js' %}"></script>
+
+<!-- Your Custom JavaScript -->
+<script src="{% static 'js/main.js' %}"></script>
+
+
+</body>
+</html>
